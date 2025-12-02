@@ -1,13 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KVZBJDM9');</script>
-<!-- End Google Tag Manager -->
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-17M7CDDNSD"></script>
 <script>
@@ -17,10 +10,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   gtag('config', 'G-17M7CDDNSD');
 </script>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KVZBJDM9');</script>
+<!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Static E-Commerce Page</title>
-
   <style>
     body {
       margin: 0;
@@ -33,10 +32,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: #fff;
       padding: 20px;
       text-align: center;
-    }
-
-    nav {
-      margin-top: 10px;
     }
 
     nav a {
@@ -81,6 +76,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin-top: 10px;
     }
 
+    .btn:hover {
+      background: #444;
+    }
+
     footer {
       background: #222;
       color: #fff;
@@ -88,9 +87,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding: 15px;
       margin-top: 40px;
     }
+
+    form input {
+      display: block;
+      width: 200px;
+      padding: 10px;
+      margin: 10px auto;
+    }
+
+    form button {
+      padding: 10px 20px;
+      background: #222;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #444;
+    }
   </style>
 </head>
-
 <body>
   <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KVZBJDM9"
@@ -98,45 +116,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 <header>
-  <h1>My Static E-Commerce Store</h1>
+  <h1>Static E-Commerce Store</h1>
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Products</a>
-    <a href="#">Contact</a>
+    <a href="#products">Products</a>
+    <a href="#payment">Payment</a>
   </nav>
 </header>
 
-<section class="section">
+<!-- PRODUCTS SECTION -->
+<section id="products" class="section">
   <h2>Our Products</h2>
-
   <div class="product-grid">
 
     <div class="product-card">
       <img src="https://via.placeholder.com/200">
       <h3>Product 1</h3>
       <p>Price: $10</p>
-      <a class="btn" href="#">Buy Now</a>
+      <a class="btn" href="#payment">Buy Now</a>
     </div>
 
     <div class="product-card">
       <img src="https://via.placeholder.com/200">
       <h3>Product 2</h3>
       <p>Price: $15</p>
-      <a class="btn" href="#">Buy Now</a>
+      <a class="btn" href="#payment">Buy Now</a>
     </div>
 
     <div class="product-card">
       <img src="https://via.placeholder.com/200">
       <h3>Product 3</h3>
       <p>Price: $20</p>
-      <a class="btn" href="#">Buy Now</a>
+      <a class="btn" href="#payment">Buy Now</a>
     </div>
 
   </div>
 </section>
 
+<!-- PAYMENT SECTION -->
+<section id="payment" class="section">
+  <h2>Payment</h2>
+  <form>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <input type="text" placeholder="Card Number" required>
+    <button type="submit">Pay Now</button>
+  </form>
+</section>
+
 <footer>
-  <p>&copy; 2025 My Static Store</p>
+  <p>&copy; 2025 Static Store</p>
 </footer>
 
 </body>
