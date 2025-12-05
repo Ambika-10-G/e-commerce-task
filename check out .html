@@ -20,30 +20,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>check out Page</title>
-  <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
-    form { max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    input { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
-    button { width: 100%; padding: 12px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
-  </style>
+  <title>Checkout Form</title>
 </head>
 <body>
+
+ 
  <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TT36FKBK"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+ <h2>Checkout Form</h2>
 
-<h2 style="text-align:center;">Checkout Form</h2>
-
-<form id="simpleForm" action="thankyou.html" method="post">
-  <input type="text" name="name" placeholder="Name" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <input type="tel" name="phone" placeholder="Phone" required>
-  <input type="text" name="product" value="Sample Product" readonly>
-  <input type="number" name="amount" value="99.99" readonly>
-  <button type="submit">Pay Now</button>
+<form id="checkoutForm">
+  Product: <input type="text" name="product" value="Sample Product" readonly><br><br>
+  Amount: <input type="number" name="amount" value="99.99" readonly><br><br>
+  Name: <input type="text" name="name" placeholder="Your Name" required><br><br>
+  Email: <input type="email" name="email" placeholder="Your Email" required><br><br>
+  Phone: <input type="tel" name="phone" placeholder="Phone Number" required><br><br>
+  <button type="submit">Submit</button>
 </form>
 
 </body>
 </html>
+
