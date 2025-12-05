@@ -20,43 +20,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment Page</title>
+  <title>check out Page</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background: #f6f6f6;
-    }
-
-    form {
-      display: inline-block;
-      background: #fff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #aaa;
-    }
-
-    input {
-      display: block;
-      margin: 10px auto;
-      padding: 10px;
-      width: 200px;
-    }
-
-    a.btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #222;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-
-    a.btn:hover {
-      background: #444;
-    }
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f5f5f5; }
+    form { max-width: 400px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    input { width: 100%; padding: 10px; margin: 10px 0; box-sizing: border-box; }
+    button { width: 100%; padding: 12px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; }
   </style>
 </head>
 <body>
@@ -65,22 +34,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<!-- PAYMENT SECTION -->
-<h2>Payment</h2>
-<form action="insight.html">
-  Name: <input type="text" placeholder="Name" required><br>
-  Email: <input type="email" placeholder="Email" required><br>
-  Card Number: <input type="text" placeholder="Card Number" required><br>
-  
-  <button type="submit" 
-          style="padding:10px 20px; background:#007bff; color:white; 
-                 border:none; border-radius:5px; cursor:pointer; text-decoration:none;">
-    Pay Now
-  </button>
-</form>
+<h2 style="text-align:center;">Checkout Form</h2>
 
-
-
+<form id="simpleForm" action="thankyou.html" method="post">
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <input type="tel" name="phone" placeholder="Phone" required>
+  <input type="text" name="product" value="Sample Product" readonly>
+  <input type="number" name="amount" value="99.99" readonly>
+  <button type="submit">Pay Now</button>
 </form>
 
 </body>
